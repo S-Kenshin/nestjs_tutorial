@@ -3,9 +3,9 @@ import { PostType } from './post.interface';
 
 @Injectable()
 export class PostsService {
-  posts: PostType[] = [];
+  private readonly posts: PostType[] = [];
 
-  findAll() {
+  findAll(): PostType[] {
     return this.posts;
   }
 }
